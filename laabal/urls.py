@@ -25,8 +25,11 @@ from laabalpoubelle.views import *
 router = routers.DefaultRouter()
 router.register(r'clients', ClientsViewSet)
 router.register(r'Poubelles', PoubellesViewSet)
+router.register(r'Typespoubelle', TypespoubelleViewSet)
 router.register(r'zones', ZonesViewSet)
 router.register(r'commande', CommandeViewSet)
+router.register(r'reclamation', ReclamationViewSet)
+router.register(r'critique', CritiqueViewSet)
 
 
 

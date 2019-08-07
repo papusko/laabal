@@ -12,12 +12,27 @@ class ClientsViewSet(viewsets.ModelViewSet):
     serializer_class = ClientsSerializer
 
 
+class ReclamationViewSet(viewsets.ModelViewSet):
+
+    queryset = Reclamation.objects.all()
+    serializer_class = ReclamationSerializer
+
+class CritiqueViewSet(viewsets.ModelViewSet):
+
+    queryset = Critique.objects.all()
+    serializer_class = CritiqueSerializer
+
+
 class PoubellesViewSet(viewsets.ModelViewSet):
 
     queryset = Poubelles.objects.all()
     serializer_class = PoubellesSerializer   
 
 
+class TypespoubelleViewSet(viewsets.ModelViewSet):
+
+    queryset = Typespoubelle.objects.all()
+    serializer_class = TypespoubelleSerializer
 
 
 class ZonesViewSet(viewsets.ModelViewSet):
